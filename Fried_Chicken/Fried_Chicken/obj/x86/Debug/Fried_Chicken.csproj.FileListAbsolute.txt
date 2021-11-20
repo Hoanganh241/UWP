@@ -252,3 +252,5 @@ D:\ky-3\github\UWP\Fried_Chicken\Fried_Chicken\obj\x86\Debug\Pages\FoodDetail.xa
 D:\ky-3\github\UWP\Fried_Chicken\Fried_Chicken\obj\x86\Debug\Pages\FoodDetail.xbf
 D:\ky-3\github\UWP\Fried_Chicken\Fried_Chicken\bin\x86\Debug\Pages\FoodDetail.xbf
 D:\ky-3\github\UWP\Fried_Chicken\Fried_Chicken\bin\x86\Debug\Newtonsoft.Json.dll
+C:\xampp\htdocs\UWP\Fried_Chicken\Fried_Chicken\obj\x86\Debug\Fried_Chicken.exe
+C:\xampp\htdocs\UWP\Fried_Chicken\Fried_Chicken\obj\x86\Debug\Fried_Chicken.pdb
