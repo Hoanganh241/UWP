@@ -75,7 +75,7 @@
                                 <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="{x:Bind ProPrice}" Foreground="#1E26A2" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Button   Content="Mua" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="#E6E34C" />
+                            <Button Click="Add_To_Cart" Content="Add To Cart" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="#E6E34C" />
                         </Grid>
                     </StackPanel>
                 </DataTemplate>

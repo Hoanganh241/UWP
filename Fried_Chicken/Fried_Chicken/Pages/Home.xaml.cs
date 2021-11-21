@@ -6,6 +6,8 @@ using Fried_Chicken.Services;
 using Fried_Chicken.Models.Entity;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
+using Fried_Chicken.Adapters;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -20,6 +22,10 @@ namespace Fried_Chicken.Pages
         {
             this.InitializeComponent(); 
             RenderSpecial();
+            SQLiteHelper sQ = SQLiteHelper.GetInstance();
+
+
+    
         }
 
         public async void RenderSpecial()
@@ -34,6 +40,13 @@ namespace Fried_Chicken.Pages
                     Products.Items.Add(new Product() { ProName = c.name, ProDetail = c.description, ProID = c.id, ProImg = c.image, ProPrice = c.price });
                 }
             }
+        }
+
+        private void Add_To_Cart(object sender, HoldingRoutedEventArgs e) {
+            Product p = Products.SelectedItem as Product;
+            CartItem item = new CartItem() { Id = p.ProID, Name = p.ProName, Image = p.ProImg, Price = p.ProPrice, Qty = 1 };
+            CartService service = new CartService();
+            service.AddToCart(item);
         }
 
         //protected override void OnNavigatedTo(NavigationEventArgs e)
